@@ -104,11 +104,11 @@ body {
     }
 
     75% {
-        color: #82091e;
+        color: gray;
     }
 
     100% {
-        color: #02456f;
+        color: grey;
     }
 }
 
@@ -146,7 +146,9 @@ body {
 }
 
 .menu-links a:hover {
-    text-decoration: underline #91300e;
+    color: gray;
+    transition: 0.5s;
+    font-weight: bold;
 
 }
 
@@ -170,6 +172,7 @@ body {
     width: 70%;
     margin: auto;
     padding: 10px;
+
 }
 
 
@@ -207,6 +210,8 @@ body {
 
 .button:hover {
     background-color: #91300e;
+    transition: 0.5s;
+    color: black;
 }
 
 .button:active {
@@ -222,6 +227,7 @@ body {
     display: flex;
     margin-top: 100px;
     margin: auto;
+    justify-content: flex-end;
 }
 
 .nishi,
@@ -231,12 +237,50 @@ body {
     width: 20%;
 }
 
-.numrat h1{
+.numrat h1 {
     font-size: 45px;
     color: #91300e;
 }
 
-.numrat h3{
+.numrat h3 {
     font-size: 25px;
-    color: #grey;
+    color: grey;
+}
+
+.service {
+    background-color: rgb(206, 202, 202);
+}
+
+.service h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.row {
+    width: 80%;
+    display: flex;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.images {
+    width: 50%;
+}
+
+.images img {
+    width: 100%;
+}
+
+.divi {
+    background-color: #fff;
+    text-align: center;
+    margin: auto;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
 }
