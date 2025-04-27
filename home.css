@@ -194,6 +194,75 @@ body {
     text-align: left;
 }
 
+.tense {
+    background: #91300e;
+    color: #feece5;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 50px;
+    /* Rounded corners for a sleek look */
+    border: 2px solid #feece5;
+    /* Border to match the background color */
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    transition: all 0.3s ease;
+    text-decoration: none;
+    /* Remove the underline for the link */
+    display: inline-block;
+    text-align: center;
+}
+
+.tense a {
+    color: rgb(209, 180, 180);
+    /* Ensure the text color is inherited from the button */
+    text-decoration: none;
+    /* Remove any default underline from the link */
+}
+
+.tense:hover {
+    background: #feece5;
+    color: #91300e;
+    border: 2px solid #91300e;
+    /* Darker border on hover */
+    transform: translateY(-4px);
+    /* Lift effect for a polished feel */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    /* Slightly stronger shadow on hover */
+}
+
+.tense:focus {
+    outline: none;
+    /* Remove default focus outline */
+}
+
+.tense:active {
+    transform: translateY(2px);
+    /* Slight indentation effect when clicked */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    /* Softens the shadow when active */
+}
+
+.tense::before {
+    content: "👉 ";
+    font-size: 18px;
+    color: #feece5;
+    transition: all 0.3s ease;
+}
+
+.tense:hover::before {
+    transform: translateX(6px);
+    /* Subtle movement for the arrow */
+}
+
+
+
+
 .button {
     display: inline-block;
     padding: 10px 15px;
@@ -202,12 +271,18 @@ body {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #fff;
     background-color: #91300e;
     border: none;
     border-radius: 15px;
     box-shadow: 0 7px #999;
+    color: white;
 }
+
+/* .tense a {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+} */
 
 
 .button:hover {
@@ -257,7 +332,7 @@ body {
     font-size: 40px;
     padding: 5px;
     margin: 10px;
-    color:#91300e;
+    color: #91300e;
 
 }
 
@@ -279,69 +354,69 @@ body {
 }
 
 .divi {
-       text-align: center;
-       margin: auto;
-       padding: 10px;
-       margin: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    margin: 10px;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  
-    }
-    
-    .tenses-section {
+
+}
+
+.tenses-section {
     background: #feece5;
     padding: 50px 20px;
     text-align: center;
-    }
-    
-    .tenses-section h2 {
+}
+
+.tenses-section h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #333;
-    }
-    
-    .tenses-cards {
+}
+
+.tenses-cards {
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    }
-    
-    .card {
+}
+
+.card {
     background: #fff8f5;
     padding: 20px;
     border-radius: 20px;
     width: 300px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    }
-    
-    .profile-pic {
+}
+
+.profile-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    }
-    
-    .card h3 {
+}
+
+.card h3 {
     margin: 10px 0;
     font-size: 1.3rem;
     color: #333;
-    }
-    
-    .card p {
+}
+
+.card p {
     font-size: 0.95rem;
     color: #666;
     margin-bottom: 20px;
-    }
-    
-    
-    .tense{
-        padding: 8px;
-        color: #91300e;
-    }
+}
+
+
+.tense {
+    padding: 8px;
+    color: #91300e;
+}
