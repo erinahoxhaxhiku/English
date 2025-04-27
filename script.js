@@ -7,3 +7,4 @@ document.querySelectorAll('.card').forEach(card => {
         this.style.backgroundColor = '#feece5';
     });
 });
+

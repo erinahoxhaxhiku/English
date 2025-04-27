@@ -195,12 +195,12 @@ body {
 }
 
 .tense {
-    background: #91300e;
-    color: #feece5;
+   
+    color: black;
     font-size: 16px;
     font-weight: 600;
     padding: 12px 24px;
-    border-radius: 50px;
+    border-radius: 20px;
     /* Rounded corners for a sleek look */
     border: 2px solid #feece5;
     /* Border to match the background color */
@@ -216,26 +216,33 @@ body {
     /* Remove the underline for the link */
     display: inline-block;
     text-align: center;
+
+    background: #feece5;
+    color: #91300e;
+    border: 2px solid #91300e;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .tense a {
-    color: rgb(209, 180, 180);
+    color: black;
     /* Ensure the text color is inherited from the button */
     text-decoration: none;
+    font-size: 13px;
     /* Remove any default underline from the link */
 }
 
 .tense:hover {
-    background: #feece5;
-    color: #91300e;
-    border: 2px solid #91300e;
-    /* Darker border on hover */
+    background: #91300e;
+    border: 2px solid black;
     transform: translateY(-4px);
-    /* Lift effect for a polished feel */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    /* Slightly stronger shadow on hover */
+    color: #feece5;
 }
-
+.tense a:hover{
+    color: #feece5;
+    transform: translateY(-4px);
+}
 .tense:focus {
     outline: none;
     /* Remove default focus outline */
@@ -250,7 +257,7 @@ body {
 
 .tense::before {
     content: "👉 ";
-    font-size: 18px;
+    font-size: 15px;
     color: #feece5;
     transition: all 0.3s ease;
 }
@@ -273,7 +280,6 @@ body {
     outline: none;
     background-color: #91300e;
     border: none;
-    border-radius: 15px;
     box-shadow: 0 7px #999;
     color: white;
 }
@@ -419,4 +425,123 @@ body {
 .tense {
     padding: 8px;
     color: #91300e;
+}
+.about{
+    background-color:  #feece5;
+    padding:20px;
+}
+.gramatika{
+    padding-top: 3%;
+}
+.gramatika h1{
+    text-align: center;
+    color:#91300e;
+}
+.gramatika p{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Space between the divs */
+    gap: 20px; /* Space between divs */
+    padding-top: 3%;
+}
+.container h1{
+    font-weight: 100;
+    text-align: left;
+}
+.llojet{
+    width: 45%; /* Make each div take up 45% of the container's width */
+    padding: 20px;
+    color: #91300e;
+    text-align: right;
+
+}
+
+.conclusion{
+    width: 45%; /* Make each div take up 45% of the container's width */
+    padding: 20px;
+    color: black;
+    text-align: left;
+
+}
+
+footer.footer {
+    display: flex;
+    justify-content: space-between; /* Space between the divs */
+    padding: 100px;
+    background-color: #91300e; /* Set background color */
+    color: white;
+    padding-top: 4%;
+}
+
+.footer-box {
+    width: 45%; /* Set width for each div */
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.footer-box h1{
+    font-size: 28px;
+}
+
+.footer-box h2{
+    font-size:25px;
+}
+
+.footer-box h3{
+    font-size: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button (Pages link) */
+.dropbtn {
+    padding: 10px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #91300e;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #feece5;
+    color: black;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Optional: style the Pages link on hover */
+.dropdown:hover .dropbtn {
+    color: #91300e;
+    border-bottom: 2px solid #91300e;
 }

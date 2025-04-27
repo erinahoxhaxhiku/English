@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts of Speech</title>
+    <link rel="stylesheet" href="speech.css">
+</head>
+<body>
+    <div class="foto" id="foto">
+        <div class="menu">
+            <div class="logo">
+                <a href="" class="logonje">
+                    <h1>English<i>grammar</i></h1>
+                </a>
+                <div class="menu-links">
+                    <a href="home.html">Home Page</a>
+                    <a href="#per">About Us</a>
+                    <div class="dropdown">
+                <a href="pages.html" class="dropbtn">Pages ▼</a>
+                <div class="dropdown-content">
+                    <a href="speech.html">Parts of speech</a>
+                    <a href="home.html #tensat">Tenses</a>
+                    <a href="quiz.html">Conditional Sentences</a>
+                </div>
+            </div>
+                    <a href="home.html #per">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <h1>Parts of Speech in English</h1>
+        <p>Learn the building blocks of English grammar!</p>
+    </header>
+
+    <section class="cards-container">
+        <div class="card">
+            <h2>Noun</h2>
+            <p>A word that names a person, place, thing, or idea.<br>Example: *dog*, *happiness*</p>
+        </div>
+
+        <div class="card">
+            <h2>Pronoun</h2>
+            <p>A word used instead of a noun.<br>Example: *he*, *she*, *it*</p>
+        </div>
+
+        <div class="card">
+            <h2>Verb</h2>
+            <p>A word that shows action or state of being.<br>Example: *run*, *is*</p>
+        </div>
+
+        <div class="card">
+            <h2>Adjective</h2>
+            <p>A word that describes a noun or pronoun.<br>Example: *happy*, *blue*</p>
+        </div>
+
+        <div class="card">
+            <h2>Adverb</h2>
+            <p>A word that describes a verb, adjective, or another adverb.<br>Example: *quickly*, *very*</p>
+        </div>
+
+        <div class="card">
+            <h2>Preposition</h2>
+            <p>Shows relationship between a noun (or pronoun) and other words.<br>Example: *in*, *on*, *at*</p>
+        </div>
+
+        <div class="card">
+            <h2>Conjunction</h2>
+            <p>A word that connects words, phrases, or clauses.<br>Example: *and*, *but*, *or*</p>
+        </div>
+
+        <div class="card">
+            <h2>Interjection</h2>
+            <p>A word that expresses strong emotion.<br>Example: *Wow!*, *Oh!*</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Made with ❤️ for English learners!</p>
+    </footer>
+    
+    <!-- Animation Script -->
+    <script>
+      
+       
+    const cards = document.querySelectorAll('.card');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('show');
+                }, index * 150); // Delay each card by 150ms
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    cards.forEach(card => {
+        observer.observe(card);
+    });
+
+
+    </script>
+    </body>
+    </html>
+    
+</body>
+</html>
