@@ -20,13 +20,16 @@
                     <a href="home.html">Home Page</a>
                     <a href="#per">About Us</a>
                     <div class="dropdown">
-                <a href="pages.html" class="dropbtn">Pages ▼</a>
-                <div class="dropdown-content">
-                    <a href="speech.html">Parts of speech</a>
-                    <a href="home.html #tensat">Tenses</a>
-                    <a href="quiz.html">Conditional Sentences</a>
-                </div>
-            </div>
+                        <a href="pages.html" class="dropbtn">Pages ▼</a>
+                        <div class="dropdown-content">
+                            <a href="speech.html">Parts of speech</a>
+                            <a href="home.html #tensat">Tenses</a>
+                            <a href="conditional.html">Conditional Sentences</a>
+                            <a href="passive.html">Passive voice</a>
+                            <a href="active.html">Active voice</a>
+                            <a href="questions.html">Questions and negatives</a>
+                        </div>
+                    </div>
                     <a href="home.html #per">Contact us</a>
                 </div>
             </div>
@@ -73,7 +76,36 @@
             <strong>Example:</strong> If I had taken that job, I would be rich now.</p>
         </div>
     </section>
-
+    <section class="exercise-section">
+        <h2>Practice Exercises</h2>
+    
+        <!-- Exercise 1 -->
+        <div class="exercise">
+            <p>1. If it rains, we __________ (stay) home.</p>
+            <button class="answer" data-correct="false">stayed</button>
+            <button class="answer" data-correct="true">will stay</button>
+            <button class="answer" data-correct="false">have stayed</button>
+        </div>
+    
+        <!-- Exercise 2 -->
+        <div class="exercise">
+            <p>2. If she had studied harder, she __________ (pass) the exam.</p>
+            <button class="answer" data-correct="true">would have passed</button>
+            <button class="answer" data-correct="false">will pass</button>
+            <button class="answer" data-correct="false">would pass</button>
+        </div>
+    
+        <!-- Exercise 3 -->
+        <div class="exercise">
+            <p>3. If I __________ (win) the lottery, I would travel the world.</p>
+            <button class="answer" data-correct="false">won</button>
+            <button class="answer" data-correct="true">won</button>
+            <button class="answer" data-correct="false">had won</button>
+        </div>
+    
+        <div id="score"></div>
+    </section>
+    
     <footer class="footer">
         <p>Made with ❤️ for English learners!</p>
     </footer>
@@ -115,6 +147,33 @@
                 behavior: 'smooth'
             });
         });
+
+        // Exercise functionality
+const answers = document.querySelectorAll('.answer');
+const scoreDisplay = document.getElementById('score');
+let score = 0;
+
+answers.forEach(button => {
+    button.addEventListener('click', (event) => {
+        const isCorrect = event.target.dataset.correct === 'true';
+
+        if (isCorrect) {
+            event.target.style.backgroundColor = '#4CAF50'; // Green for correct
+            score++;
+        } else {
+            event.target.style.backgroundColor = '#F44336'; // Red for incorrect
+        }
+
+        // Disable all buttons for the current exercise after an answer is selected
+        const exercise = event.target.closest('.exercise');
+        const buttons = exercise.querySelectorAll('button');
+        buttons.forEach(btn => btn.disabled = true);
+
+        // Display the current score
+        scoreDisplay.textContent = `Your score: ${score} / 3`;
+    });
+});
+
     </script>
     
 </body>
