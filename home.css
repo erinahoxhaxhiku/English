@@ -185,6 +185,7 @@ body {
 .foto img {
     width: 100%;
     border-radius: 50px;
+    /* margin-top: -75px; */
 }
 
 .aferfoto {
@@ -365,6 +366,16 @@ body {
     padding: 10px;
     margin: 10px;
 }
+
+.divi a{
+text-decoration: none;
+color: white;
+}
+
+.divi a:hover{
+    color: black;
+    transition: 0.5s;
+    }
 
 body {
     font-family: Arial, sans-serif;

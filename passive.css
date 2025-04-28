@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #feece5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #91300e;
+    color: #fff;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    animation: fadeDown 1s ease-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.7rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    animation: fadeUp 1.5s ease-in;
+}
+
+.content h2 {
+    color: #91300e;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+.content p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Button */
+button {
+    background-color: #91300e;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+button:hover {
+    background-color: #7a260c;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hidden Examples */
+.hidden {
+    display: none;
+}
+
+#examples {
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease forwards;
+}
+
+#examples ul {
+    list-style: disc inside;
+    color: #666;
+    padding-left: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    background-color: black;
+    color: white;
+    font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bounce {
+    animation: bounceIn 1.5s infinite alternate;
+}
+
+@keyframes bounceIn {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
