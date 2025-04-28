@@ -545,3 +545,131 @@ footer.footer {
     color: #91300e;
     border-bottom: 2px solid #91300e;
 }
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .content {
+        height: 100vh;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        background-color: #ffffff;
+    
+    }
+    .menu {
+        position: relative;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        padding: 0 20px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        float: none;
+        width: 100%;
+    }
+
+    .menu-links a, .dropbtn {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .foto {
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .aferfoto {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .kryesor {
+        width: 87%;
+        padding: 30px;
+    }
+
+    .orange {
+        margin-top: 0;
+        height: auto;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .numrat {
+        align-items: center;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .nishi, .dyshi, .treshi, .katershi {
+        width: 80%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .images img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .llojet, .conclusion {
+        width: 90%;
+        text-align: center;
+    }
+
+    footer.footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footer-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .tenses-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
